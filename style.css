@@ -1,47 +1,75 @@
-.stApp{
+/* -------- GLOBAL APP STYLE -------- */
+.stApp {
     background: linear-gradient(
-    135deg,
-    #82e008 0%,
-    #e0f2fe 50%,
-    #0ec374 100%
+        135deg,
+        #82e008 0%,
+        #e0f2fe 50%,
+        #0ec374 100%
     );
     min-height: 100vh;
-    font-family: 'Segoe UI',sans-serif;
-
-
+    font-family: 'Segoe UI', sans-serif;
 }
-.card{
-    background-color: #fefefd;
+
+/* -------- CARD CONTAINER -------- */
+.card {
+    background-color: #ffffff;
     padding: 25px;
-    border-radius:16px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     margin-bottom: 25px;
-    
-}
-h1,h2,h3{
-    color:#0f172a;
-}
-/* Metric box*/
-div[data-testid="metric-container"]{
-    background-color: #f8fafc;
-    border-radius:14px;
-    padding:15px;
-    box-shadow:0 8px 10px rgba(0,0,0,0.05);
-    
 }
 
-.prediction-box{
+/* -------- HEADINGS -------- */
+h1, h2, h3 {
+    color: #0f172a;
+}
+
+/* -------- METRIC BOX -------- */
+div[data-testid="metric-container"] {
+    background-color: #f8fafc;
+    border-radius: 14px;
+    padding: 15px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* -------- PREDICTION BOX -------- */
+.prediction-box {
     background: linear-gradient(
-    135deg,
-    #dcfce7,
-    #bbf7d0,
+        135deg,
+        #dcfce7,
+        #bbf7d0
     );
     padding: 22px;
     border-radius: 14px;
     text-align: center;
-    
     font-size: 22px;
     font-weight: bold;
     color: #1453d1;
     margin-top: 15px;
+}
+
+/* -------- FOOTER CARD -------- */
+.card-footer {
+    background-color: #ffffff;
+    padding: 22px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    margin-top: 25px;
+}
+
+/* -------- SLIDER STYLE -------- */
+.css-1cpxqw2, .css-1y4p8pa {
+    color: #1453d1;
+}
+
+/* -------- TABLE STYLE -------- */
+thead tr th {
+    background-color: #e0f2fe;
+    color: #0f172a;
+    font-weight: 600;
+}
+
+/* -------- REMOVE STREAMLIT DEFAULT FOOTER -------- */
+footer {
+    visibility: hidden;
 }
