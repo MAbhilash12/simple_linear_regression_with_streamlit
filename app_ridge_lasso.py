@@ -16,7 +16,7 @@ def load_css(file):
     with open(file) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-load_css("style.css")
+load_css("style1.css")
 
 # ---------------- TITLE ----------------
 st.markdown("""
@@ -134,3 +134,4 @@ st.markdown(
     f'<div class="prediction-box">Predicted Tip : ${tip:.2f}</div>',
     unsafe_allow_html=True
 )
+
